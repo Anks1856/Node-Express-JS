@@ -2,15 +2,19 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const model = require('./MongoDB/model');
+const ImageRouter = require('./controller/images');
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
+
+app.use(express.static('./views'));
 
 app.set("view engine", "ejs");
 
 app.get('/' , (req , res )=>{
     model.Student.find({}).exec().then(students =>{
-        console.log('mila mal');
+        // console.log('mila mal');
+
         console.log(students);
         res.render('index' , {students : students});
     }).catch(err =>{
@@ -19,6 +23,7 @@ app.get('/' , (req , res )=>{
     })
     
 });
+
 
 app.post('/addStudent' ,(req , res)=>{
     console.log(req.body);
@@ -30,7 +35,10 @@ app.post('/addStudent' ,(req , res)=>{
         console.log(err);
         res.send('unable to save data please try again!');
     });
-} )
+} );
+
+app.use('/img' ,express.static(__dirname + '/views'),ImageRouter );
+
 
 app.listen(5000 , ()=>{
     console.log('server is running on port 5000....');
