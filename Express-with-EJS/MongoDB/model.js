@@ -15,6 +15,16 @@ const studentSchema = new mongoose.Schema({
     Email : String
 });
 
-const Student = new mongoose.model('Student' , studentSchema);
+const ImgSchema = new mongoose.Schema({
+    name : String ,
+    desc : String ,
+    img : {
+        data : Buffer ,
+        contentType : String
+    }
+})
 
-module.exports = {Student}
+const Student = new mongoose.model('Student' , studentSchema);
+const Image = new mongoose.model("Images" ,ImgSchema);
+
+module.exports = {Student , Image}
