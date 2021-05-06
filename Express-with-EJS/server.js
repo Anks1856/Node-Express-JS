@@ -7,7 +7,7 @@ const ImageRouter = require('./controller/images');
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 
-app.use(express.static('./views'));
+app.use(express.static('./public'));
 
 app.set("view engine", "ejs");
 
@@ -37,7 +37,7 @@ app.post('/addStudent' ,(req , res)=>{
     });
 } );
 
-app.use('/img' ,express.static(__dirname + '/views'),ImageRouter );
+app.use('/img' ,express.static(__dirname + '/public'),ImageRouter );
 
 
 app.listen(5000 , ()=>{
