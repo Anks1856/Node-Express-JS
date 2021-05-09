@@ -8,18 +8,22 @@ const config = require("./Paytm/config");
 
 const app = express();
 
+
+require('./prod')(app);
+
 const parseUrl = express.urlencoded({ extended: false });
 const parseJson = express.json({ extended: false });
 
 const PORT = process.env.PORT || 4000;
 
+app.use(express.static('./public'));
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile("/index.html");
 });
 
 app.post('/yes' ,  [parseUrl, parseJson],(req , res) =>{
     console.log(req.body);
-    res.send('<h1>yes you did it ! yah you did itttttttttt!</h1>')
+    res.sendFile(__dirname + "/public/success.html");
 });
 
 app.post("/paynow", [parseUrl, parseJson], (req, res) => {
