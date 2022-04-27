@@ -14,3 +14,6 @@ const str = "c";
 var a = str.charCodeAt(0);
 console.log(a)
 console.log(String.fromCharCode(a))
+
+challenge
+https://edabit.com/shuffle
