@@ -38,3 +38,5 @@ https://github.com/haoel/leetcode
 12/5 => https://betterprogramming.pub/10-modern-javascript-tricks-every-developer-should-use-377857311d79
 
 13/5 => https://javascript.plainenglish.io/12-important-javascript-functions-every-web-developer-should-know-e488c4bbf521
+
+16/5 => https://levelup.gitconnected.com/top-5-javascript-es12-features-you-should-start-using-now-b16a8b5353b1
