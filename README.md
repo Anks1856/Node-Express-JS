@@ -33,3 +33,6 @@ https://github.com/haoel/leetcode
 
 
 2..to
+
+
+12/5 => https://betterprogramming.pub/10-modern-javascript-tricks-every-developer-should-use-377857311d79
