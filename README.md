@@ -42,3 +42,5 @@ https://github.com/haoel/leetcode
 16/5 => https://levelup.gitconnected.com/top-5-javascript-es12-features-you-should-start-using-now-b16a8b5353b1
 
 more => https://medium.com/@Bigscal-Technologies/which-type-of-loop-is-fastest-in-javascript-55cc1845f5de
+
+all type of survey   => https://insights.stackoverflow.com/survey/2021#stack-overflow-site-use-so-comm-age
