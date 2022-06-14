@@ -46,3 +46,5 @@ more => https://medium.com/@Bigscal-Technologies/which-type-of-loop-is-fastest-i
 all type of survey   => https://insights.stackoverflow.com/survey/2021#stack-overflow-site-use-so-comm-age ,
 
                 => https://2021.stateofjs.com/en-US/libraries
+                
+                https://devhints.io/jest
